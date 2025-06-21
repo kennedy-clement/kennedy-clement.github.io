@@ -1,0 +1,138 @@
+/* Hello! to change visual things like colors and images, please
+only change the variables listed below:
+*/
+:root{
+    --color-1: white;
+    --color-2: #000000;
+    --color-3: #fff7c4;
+    --color-3-shade: #dfd7a5;
+    --color-4: #f7aa59;
+    --color-5: #6fa8dc;
+    --color-6: #459329;
+    --color-7: #ffdb59;
+
+}
+
+body{
+    background-color: var(--color-3);
+
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+b{
+    color:var(--color-3);
+}
+
+h2{
+    margin: auto 5px;
+    text-shadow: 2px 1px black;
+    color: white;
+
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+
+    font-size: 48px;
+    font-weight: bold;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--color-3);
+    justify-content: center;
+
+    max-width: 1800px;
+}
+
+.header{
+    text-align: center;
+    width: 100%;
+}
+
+.mixed-container{
+    background: url(src/stripes.png);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 15px;
+    border: 5px solid var(--color-6);
+    border-radius: 15px;
+
+    padding: 5px;
+    max-width: 1200px;
+    min-width: 400px;
+    box-shadow: 1px 2px 3px #0008;
+}
+
+.box{
+    justify-content: center;
+    background-color: var(--color-3);
+    margin: 10px;
+    max-width: 400px;
+
+    border: 3px solid var(--color-6);
+    border-radius: 6px;
+
+    padding: 10px;
+
+}
+
+
+.menu{
+    float: left;
+    background-color: var(--color-4);
+    width: 75%;
+    height: 100px;
+    cursor: pointer;
+
+    display: inline-block;
+    position: relative;
+    padding: 16px;
+    margin: 10px -10px;
+    overflow: clip;
+
+    border: 5px solid var(--color-5);
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 1px var(--color-3-shade);
+}
+
+.menu:hover{
+    translate: 5px 5px;
+    box-shadow: none;
+}
+
+.hidden{
+    display: none;
+    position: relative;
+    top: 45px;
+    width: 100%;
+
+    margin: 10px 5px 1px 5px;
+    font-size: larger;
+    font-weight: bold;
+    text-shadow: 1px 1px white;
+    color: black;
+
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.hidden:hover{
+
+}
+
+
+@media only screen and (max-width: 957px) {
+    h2{
+        font-size: 24px;
+    }
+
+}

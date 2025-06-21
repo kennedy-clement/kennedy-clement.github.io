@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kennedy's Sitting Service</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex-container">
+
+    <div class="mixed-container">
+        <div class="box">
+            <img src="src/headshot-cropped.jpeg" style="border-radius: 10px; max-width: 100%; height:auto" alt="Photo of me :)">
+        </div>
+        <div class="box">
+            <hr>
+            <h2 style="background: var(--color-6)">Babysitting,
+            Pet-sitting, and
+            House-sitting
+            Services in
+            Plum Creek
+            </h2>
+            <hr>
+
+        </div>
+    </div>
+
+    <div style="text-align: center; max-width: 900px; font-size: larger; font-weight: bold">
+        Hi! I’m Kennedy Clement. I’m a student at McGill University in Montreal,
+        QC, Canada, working on a degree in Kindergarten and Elementary Education.
+        I’m originally from Kyle and I’m back home for the summer, looking to gain
+        some more experience in childcare. I have two wonderful dogs and a passion for plants,
+        and I’m looking forward to caring for your home and loved ones!
+    </div>
+
+    <div  class="menu" style="background: url(src/blocks.png)" id="baby">
+        <div onclick="reveal('baby')"><h2 style="background: var(--color-5)"> Babysitting</h2><h2 id="babydown" style="background: var(--color-5)">▼</h2><h2 id="babyup" style="background: var(--color-5); visibility: hidden">▲</h2></div>
+        <div class="hidden" id="babytext" style="background: var(--color-5)">
+            I’m experienced in caring for children of all ages, from infants to teens. I can offer reading and writing support to younger kiddos, cook, and facilitate activities outside of the home like trips to the park or the pool when appropriate.
+            <p>
+            $14.00 per hour, + $2 per extra child
+
+        </div>
+    </div>
+
+        <div  class="menu" style="background: url(src/pets.png); border-color: var(--color-4)"  id="pet">
+            <div onclick="reveal('pet')"><h2 style="background: var(--color-4)"> Petsitting</h2><h2 id="petdown" style="background: var(--color-4)">▼</h2><h2 id="petup" style="background: var(--color-4); visibility: hidden">▲</h2></div>
+            <div class="hidden" id="pettext" style="background: var(--color-4)">
+                I have two dogs of my own and lots of experience caring for cats, but I’m willing to watch more exotic pets like reptiles and fish with guidance.
+                <p></p>
+                Check-in, feed and refill water, let out/ litter change
+                $10.00 per visit
+                <p></p>
+                One hour of quality time with your pet- feed and refill water, play, walk, let out/ litter change
+                $12.00 per visit
+
+            </div>
+        </div>
+
+        <div class="menu" style="background: url(src/houses.png); border-color: var(--color-6)" id="house">
+            <div onclick="reveal('house')"><h2 style="background: var(--color-6)"> Housesitting</h2><h2 id="housedown" style="background: var(--color-6)">▼</h2><h2 id="houseup" style="background: var(--color-6); visibility: hidden">▲</h2></div>
+            <div class="hidden" id="housetext" style="background: var(--color-6)">
+                Going out of town? I’ll make sure everything is in order while you’re gone.
+                <p></p>
+                Stop by, bring in mail, water houseplants, Make sure everything is locked
+                $10 per visit
+                <p></p>
+                Add a decent clean! Sweep, vacuum, mop, dust, wipe surfaces and mirrors, and generally tidy
+                $20
+
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div style="text-align: center">
+            <p style="height: 100px"></p>
+
+            Website by:
+            <p></p>
+            <a href="https://www.woolyam.net">
+            <img title="Woolyam.net" src="src/logo.gif" alt="Woolyam.net!" style="position: relative; top: -25px;">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
