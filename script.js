@@ -2,9 +2,9 @@ const map = new Map();
 map.set("baby", false);
 map.set("pet", false);
 map.set("house", false);
-map.set("s_baby", 300);
-map.set("s_pet", 300);
-map.set("s_house", 300);
+map.set("s_baby", 180);
+map.set("s_pet", 210);
+map.set("s_house", 160);
 
 const anim_starting_val = 2;
 
@@ -26,9 +26,9 @@ function reveal(element_id){
 
         id = setInterval(frame, 5)
         function frame(){
-            n = n*1.2;
+            n = n*1.15;
             if (map.get("s_" + element_id) < n || map.get(element_id) === false){
-                document.getElementById(element_id).style.height = map.get("s_" + element_id);
+                document.getElementById(element_id).style.height = "auto";
                 clearInterval(id)
             }
             else{
